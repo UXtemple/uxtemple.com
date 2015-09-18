@@ -1,0 +1,46 @@
+{
+  "name": "uxtemple.com",
+  "description": "uxtemple.com's site on Panels",
+  "main": "index.js",
+  "scripts": {
+    "clean": ".bin/clean",
+    "compile": ".bin/compile",
+    "pacpan": ".bin/pacpan",
+    "pacpan:watch": ".bin/pacpan-watch",
+    "push": ".bin/push",
+    "test": ".bin/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UXtemple/uxtemple.com.git"
+  },
+  "keywords": [
+    "uxtemple.com",
+    "panels",
+    "UXtemple"
+  ],
+  "author": "UXtemple <hi@uxtemple.com>",
+  "contributors": [
+    "Darío Javier Cravero <dario@uxtemple.com>",
+    "Tom Parandyk <tom@uxtemple.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UXtemple/uxtemple.com/issues"
+  },
+  "homepage": "https://github.com/UXtemple/uxtemple.com#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babelify": "^6.3.0",
+    "browserify": "^11.1.0",
+    "exorcist": "^0.4.0",
+    "uglify-js": "^2.4.24"
+  },
+  "dependencies": {
+    "panels-pages": "^0.1.0",
+    "panels-ui": "^0.6.0",
+    "redux": "^3.0.0",
+    "redux-logger": "^1.0.8",
+    "redux-thunk": "^1.0.0"
+  }
+}
