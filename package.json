@@ -1,8 +1,10 @@
 {
   "name": "uxtemple.com",
+  "version": "0.0.0",
   "description": "uxtemple.com's site on Panels",
   "main": "index.js",
   "scripts": {
+    "build": ".bin/build",
     "clean": ".bin/clean",
     "compile": ".bin/compile",
     "pacpan": ".bin/pacpan",
