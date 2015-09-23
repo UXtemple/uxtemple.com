@@ -4,51 +4,75 @@ import pagesReducer from 'panels-pages/reducer';
 const DUMMY = {
   '/': {
     title: 'UXtemple',
+    style: {
+      backgroundColor: '#323232',
+      color: 'white',
+      fontFamily: '"Roboto", sans-serif',
+      fontWeight: 100,
+      paddingBottom: 200,
+      paddingLeft: 35,
+      paddingRight: 35
+    },
     blocks: [{
-      element: 'action',
+      element: 'image',
       data: {
-        href: 'uxtemple/',
+        src: '//uxtemple.com/uxtemple.svg',
         text: 'UXtemple'
-      }
-    }, {
-      element: 'action',
-      data: {
-        href: 'the-experiments/',
-        text: 'the experiments'
-      }
-    }, {
-      element: 'action',
-      data: {
-        href: 'http://usepanels.com/',
-        text: 'Use panels'
-      }
-    }]
-  },
-  '/uxtemple': {
-    title: 'Our story',
-    blocks: [{
-      element: 'title',
-      data: {
-        text: 'Today at UXtemple we question status quo, we experiment and re-imagine new web browsing experience.'
+      },
+      style: {
+        marginTop: 100,
+        width: 100
       }
     }, {
       element: 'text',
       data: {
-        text: 'Our story...'
+        text: 'Today at UXtemple we question status quo, we experiment and re-imagine a new web browsing experience we call Panels.'
+      },
+      style: {
+        marginTop: 25,
+        fontSize: 20
       }
-    }]
-  },
-  '/the-experiments': {
-    title: 'The experiments',
-    blocks: [{
-      element: 'title',
+    }, {
+      element: 'action',
       data: {
-        text: 'Experiments and challenges made Panels possible.'
+        href: 'https://usepanels.com/',
+        text: 'Use Panels'
+      },
+      style: {
+        active: {
+          paddingLeft: 15
+        },
+        hover: {
+          paddingLeft: 15
+        },
+        base: {
+          alignSelf: 'stretch',
+          borderBottomColor: 'rgba(255,255,255,0.75)',
+          borderBottomWidth: 1,
+          borderStyle: 'solid',
+          color: 'white',
+          marginTop: 50,
+          paddingTop: 15,
+          paddingBottom: 15,
+          textTransform: 'uppercase',
+          transition: 'padding-left 0.25s linear'
+        }
       }
     }, {
       element: 'text',
       data: {
-        text: 'Stuff explaining our experiments...'
+        text: 'Get in touch.'
+      },
+      style: {
+        marginTop: 50
+      }
+    }, {
+      element: 'text',
+      data: {
+        text: 'Say hi@UXtemple.com.'
+      },
+      style: {
+        marginTop: 5
       }
     }]
   }
