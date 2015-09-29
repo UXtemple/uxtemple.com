@@ -1,3 +1,4 @@
+import { alignSelfStretch } from 'browser-vendor-prefix';
 import { set } from 'panels-pages/actions';
 import pagesReducer from 'panels-pages/reducer';
 
@@ -46,7 +47,7 @@ const DUMMY = {
           paddingLeft: 15
         },
         base: {
-          alignSelf: 'stretch',
+          ...alignSelfStretch,
           borderBottomColor: 'rgba(255,255,255,0.75)',
           borderBottomWidth: 1,
           borderStyle: 'solid',

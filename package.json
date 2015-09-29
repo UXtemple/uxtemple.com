@@ -33,13 +33,20 @@
   "homepage": "https://github.com/UXtemple/uxtemple.com#readme",
   "devDependencies": {
     "babel": "^5.8.23",
+    "babel-plugin-react-transform": "^1.1.1",
     "babelify": "^6.3.0",
     "browserify": "^11.1.0",
+    "browserify-hmr": "^0.3.0",
     "exorcist": "^0.4.0",
+    "react": "^0.13.3",
+    "react-transform-catch-errors": "^1.0.0",
+    "react-transform-hmr": "^1.0.1",
+    "redbox-react": "^1.1.1",
     "uglify-js": "^2.4.24",
     "watchify": "^3.4.0"
   },
   "dependencies": {
+    "browser-vendor-prefix": "^1.0.0",
     "panels-pages": "^0.1.0",
     "panels-ui": "^0.6.0",
     "redux": "^3.0.0",

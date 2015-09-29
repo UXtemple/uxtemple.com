@@ -2,12 +2,12 @@
 
 APP=`node -e "console.log(require('./package.json').name);"`
 BIN=node_modules/.bin
-DST=${1:-./public}
+DST=${1:-./public/$APP}
 SRC=${2:-.}
 
 echo "[pacpan] constantly packaging app ${APP} at ${SRC} to ${DST}..."
 
-mkdir -p $DST
+mkdir -p playground
 
 $BIN/watchify --debug --verbose \
   --external panels-ui \
@@ -19,5 +19,6 @@ $BIN/watchify --debug --verbose \
   --ignore **/node_modules/**,**/__tests__/** \
   --require $SRC/index:$APP \
   --extension .es6 \
+  --plugin browserify-hmr \
   --transform babelify \
-  --outfile $DST/$APP.js
+  --outfile $DST.dev.js
